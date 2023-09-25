@@ -1,0 +1,48 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Noto Serif", serif;
+  font-family: "Poppins", sans-serif;
+}
+
+/* GENERIC CLASSES */
+
+.section {
+}
+
+.section__container {
+}
+
+.section__title {
+  color: #000;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.section__text {
+  font-size: 18px;
+}
+
+.section__text--small {
+  font-size: 16px;
+}
+
+/* ACTION BUTTON */
+.action-button {
+}
+
+.action-button--big {
+}
+
+.action-button--small {
+}
+
+.action-button--white {
+}
+
+.action-button--blue {
+}
