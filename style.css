@@ -1,8 +1,435 @@
+/* TODO */
+/* Read about font-feature-settings: 'clig' off, 'liga' off; */
+
 body {
   font-family: "Inter", sans-serif;
   font-family: "Noto Serif", serif;
   font-family: "Poppins", sans-serif;
 }
+
+/* ------------------------------------------------- */
+/* !!SHARED */
+/* ------------------------------------------------- */
+
+/* ------------------------------------------------- */
+/* ACTION BUTTON */
+/* ------------------------------------------------- */
+.action-button,
+.action-button--big {
+  display: inline-flex;
+  border-radius: 70px;
+  padding: 16px 24px;
+  background-color: #3461ff;
+  color: #fff;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+}
+
+.action-button--big {
+  font-size: 18px;
+}
+
+.action-button,
+.action-button--big:hover {
+  background-color: #2243bb;
+}
+
+/* ------------------------------------------------- */
+/* CONTAINER */
+/* ------------------------------------------------- */
+.container {
+  max-width: 1230px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* ------------------------------------------------- */
+/* SUBSCRIBE */
+/* ------------------------------------------------- */
+.subscribe {
+  display: flex;
+  justify-content: space-between;
+  height: 67px;
+}
+
+.subscribe__input {
+  width: 340px;
+  height: 100%;
+  padding: 20px 18px;
+  margin-right: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 37px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #fafafa;
+}
+
+.subscribe__input::placeholder {
+  color: #aaa;
+  font-weight: 400;
+}
+
+.subscribe__btn {
+  height: 100%;
+  width: 145px;
+}
+
+/* ------------------------------------------------- */
+/* SECTION TITLE */
+/* ------------------------------------------------- */
+.section-title {
+  color: #000;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+/* ------------------------------------------------- */
+/* SECTION TEXT */
+/* ------------------------------------------------- */
+.section-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px;
+}
+
+/* ------------------------------------------------- */
+/* !!SPECIFIC */
+/* ------------------------------------------------- */
+
+/* ------------------------------------------------- */
+/* HEADER */
+/* ------------------------------------------------- */
+.header {
+  height: 88px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.header__logo {
+  width: 144px;
+  height: 32px;
+}
+
+/* ------------------------------------------------- */
+/* NAV */
+/* ------------------------------------------------- */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav__item {
+  font-weight: 500;
+}
+
+.nav__item:hover {
+  text-decoration: underline;
+}
+
+/* ------------------------------------------------- */
+/* HERO */
+/* ------------------------------------------------- */
+.hero {
+  padding-top: 84px;
+  padding-bottom: 122px;
+}
+
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 72px;
+}
+
+.hero__title {
+  font-size: 96px;
+  font-weight: 900;
+  line-height: 98.5px;
+  letter-spacing: -4px;
+  text-transform: capitalize;
+  margin-bottom: 28px;
+}
+
+.hero__subtitle {
+  font-weight: 500;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 44px;
+}
+
+.hero__img {
+  height: 710px;
+  width: auto;
+}
+/* ------------------------------------------------- */
+/* CLIENTS */
+/* ------------------------------------------------- */
+.clients {
+  background-color: #fafafa;
+  padding-top: 78px;
+  padding-bottom: 135px;
+}
+
+.clients__title {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 95px;
+}
+
+.clients__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.clients__list-item-img {
+  width: auto;
+  height: 48px;
+}
+
+/* ------------------------------------------------- */
+/* STATS */
+/* ------------------------------------------------- */
+.stats {
+  padding-top: 135px;
+  padding-bottom: 125px;
+}
+
+.stats__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 110px;
+}
+
+.stats__numbers {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.stats__numbers-item {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.stats__numbers-description {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: capitalize;
+  max-width: 215px;
+}
+
+.stats__numbers-number {
+  color: #0b0b0b;
+  font-family: Poppins;
+  font-size: 64px;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.stats__description {
+  max-width: 500px;
+  width: 100%;
+}
+
+.stats__learn-more {
+  position: relative;
+  color: #3461ff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.stats__learn-more:after {
+  position: absolute;
+  bottom: -4px;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 100%;
+  background-color: #3461ff;
+  opacity: 0;
+}
+
+.stats__learn-more:hover:after {
+  opacity: 1;
+}
+
+/* ------------------------------------------------- */
+/* HOW */
+/* ------------------------------------------------- */
+.how {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.how__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 120px;
+}
+
+.how__info,
+.how__examples {
+  width: 50%;
+}
+
+.how__text {
+  max-width: 490px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.how__example {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.how__icon-wrapper {
+  width: 106px;
+  min-width: 106px;
+  height: 106px;
+  background-color: #3461ff;
+  display: block;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.how__example-title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: capitalize;
+  margin-bottom: 12px;
+}
+
+.how__example-description {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* ------------------------------------------------- */
+/* WORK */
+/* ------------------------------------------------- */
+.work {
+  text-align: center;
+  padding-top: 110px;
+  padding-bottom: 115;
+}
+
+.work__text {
+  margin-bottom: 50px;
+}
+
+.work__examples {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.work__example-img {
+  border-radius: 40px;
+  margin-bottom: 15px;
+}
+
+.work__example-client {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: capitalize;
+}
+
+.work__action-button {
+  width: 210px;
+  margin-top: 48px;
+}
+
+/* ------------------------------------------------- */
+/* ACTION */
+/* ------------------------------------------------- */
+
+/* ------------------------------------------------- */
+/* TEAM */
+/* ------------------------------------------------- */
+.team__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.team__images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 640px;
+}
+
+.team__image {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 26px;
+}
+
+.team__image:nth-child(3),
+.team__image:nth-child(4) {
+  border-radius: 50%;
+}
+
+/* ------------------------------------------------- */
+/* TESTIMONIALS */
+/* ------------------------------------------------- */
+
+/* ------------------------------------------------- */
+/* JOURNEY */
+/* ------------------------------------------------- */
+
+/* ------------------------------------------------- */
+/* FAQ */
+/* ------------------------------------------------- */
+
+/* ------------------------------------------------- */
+/* FOOTER */
+/* ------------------------------------------------- */
+
+/* ------------------------------------------------- */
+/* TERMS */
+/* ------------------------------------------------- */
 
 /* GENERIC CLASSES */
 
@@ -10,21 +437,6 @@ body {
 }
 
 .section__container {
-}
-
-.section__title {
-  color: #000;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Poppins;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-transform: capitalize;
-}
-
-.section__text {
-  font-size: 18px;
 }
 
 .section__text--small {
